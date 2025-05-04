@@ -1,0 +1,556 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.cabecalho {
+  background-color: #827297;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.logo img {
+  width: 150px;
+  height: 150px;
+}
+
+.info,
+.contato,
+.emails {
+  margin: 10px;
+}
+
+.redes-sociais a img {
+  width: 80px;
+  margin: 0 5px;
+  /* filter: brightness(0) invert(1); /* branco sobre roxo */
+}
+
+.zap-icon {
+  width: 44px;
+  /* ou outro tamanho desejado */
+  height: auto;
+  vertical-align: middle;
+  /* Alinha com o texto ✔ Contato */
+  margin-left: 5px;
+}
+
+
+button {
+  background-color: white;
+  color: #5d2ca0;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ccc;
+}
+
+
+.orcamento-botao {
+  background-color: #652db5;
+  /* tom de roxo semelhante à imagem */
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.orcamento-botao:hover {
+  background-color: #4b2291;
+  /* tom mais escuro no hover */
+}
+
+.servicos {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  /* Reduz padding lateral */
+  align-items: center;
+  justify-content: center;
+  gap: 115px;
+}
+
+
+
+.imagem-servico img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.servicos_celulares {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 135px;
+  padding: 40px 0;
+}
+
+.servicos_celulares .texto-servico {
+  text-align: right;
+  margin: 0 auto;
+}
+
+
+.imagem-servico_celulares {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.imagem-servico_celulares img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* anteriores */
+.text-content {
+  max-width: 50%;
+  color: #1c0032;
+}
+
+.text-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.text-content p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.benefits-list li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.cta-button {
+  background-color: #7a4bd1;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #5f37b1;
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+.footer {
+  background-color: #827297;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-inicio {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer-inicio img {
+  width: 142px;
+  height: 106px;
+  object-fit: cover;
+  display: block;
+  margin: 20px auto 20px auto;
+  /* <- Aqui está o espaçamento superior */
+  border-radius: 8px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-box {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-box h4 {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.footer-box p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 80px;
+  height: 80px;
+  border-radius: 6px;
+  margin-right: 10px;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+
+/*inicio aqui */
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #1a064f;
+  margin-top: 40px;
+}
+
+p.subtitulo {
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.servicos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.servico {
+  width: 250px;
+  padding: 30px 20px;
+  color: white;
+  text-align: center;
+  margin: 10px;
+}
+
+.servico.laranja {
+  background-color: #f4a300;
+}
+
+.servico.roxo {
+  background-color: #4b1d7b;
+}
+
+.servico h3 {
+  font-size: 1.3em;
+  margin: 15px 0 10px;
+}
+
+.servico p {
+  font-size: 0.95em;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+
+/* para celulares */
+
+.servicos_celulares {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 20px;
+}
+
+.servicos_celulares .texto-servico {
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+
+.servicos_celulares .imagem-servico {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.servicos_celulares .imagem-servico img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* android setion */
+
+.android-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f4f4f4;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.android-section .text-content {
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+
+.android-section h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.android-section p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #34495e;
+}
+
+.android-section .brand-list {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #2d3436;
+}
+
+.android-section .brand-list strong {
+  color: #0984e3;
+}
+
+.android-section .cta-button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.android-section .cta-button:hover {
+  background-color: #219150;
+}
+
+.android-section .image-content {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+.android-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+/* Responsivo para celulares */
+@media (max-width: 768px) {
+  .servicos_celulares {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .servicos_celulares .texto-servico,
+  .servicos_celulares .imagem-servico {
+    max-width: 100%;
+  }
+}
+
+
+/* nova informacao celulares */
+
+/* Estilo geral da imagem */
+.image-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+.image-content img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+/* horarios */
+
+.atendimento-section {
+  background-color: #fefefe;
+  padding: 2rem;
+  color: #2c3e50;
+}
+
+.atendimento-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.atendimento-content {
+  flex: 1 1 300px;
+  max-width: 600px;
+}
+
+.atendimento-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.atendimento-content h3 {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.atendimento-content p {
+  font-size: 1rem;
+  margin: 0.8rem 0;
+  line-height: 1.6;
+}
+
+.bairros-list {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.atendimento-image {
+  flex: 1 1 250px;
+  text-align: center;
+}
+
+.atendimento-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 768px) {
+  .atendimento-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .atendimento-image {
+    margin-top: 1rem;
+  }
+}
+
+
+/* atendimento */
+
+.atendimento-section {
+  background-color: #fefefe;
+  padding: 2rem;
+  color: #2c3e50;
+}
+
+.atendimento-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0rem;
+}
+
+.atendimento-content {
+  flex: 1 1 300px;
+  max-width: 900px;
+}
+
+.atendimento-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.atendimento-content h3 {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.atendimento-content p {
+  font-size: 1rem;
+  margin: 0.8rem 0;
+  line-height: 1.6;
+}
+
+.bairros-list {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.atendimento-image {
+  flex: 1 1 250px;
+  text-align: center;
+}
+
+.atendimento-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 768px) {
+  .atendimento-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .atendimento-image {
+    margin-top: 1rem;
+  }
+}
